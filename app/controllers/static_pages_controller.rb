@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
-  	graph = Koala::Facebook::API.new("CAACEdEose0cBAIXvjM9ohQRLwuUaRHZBMGYvkPM8ZCZC7pfkCEfd8dvloEGkcC7T6T3GKfmDZCrEWAPwW7jV2EHWiAsZAxUqGWqZCjeWp80WQZAECwsdaVPKdFMaAqYUWbrzzZBDYOHdQAMK3KtfxeIz2zSzmbQLRUgjVY2SOdfm8LBIodu3Xm39UEVOCcAvaAVj4ut5RYxPRAZDZD")
+  	graph = Koala::Facebook::API.new("CAACEdEose0cBAEwNV7izuU6mtBTZBaZBuXb7r2Wi09LWu1MHUZBdiwgd04rcet2f7IvEMATPymZAQGuOMVEWT7WE6eZCoaZCvdLTDl9fPhdUOZBTwMwHBJgmc8CuYsQZCQmPy7pudWRItnHNXQ7jMciImChxOLmAqzm0Q0SqIZCE8BHRtmbT4mGbdmr5dOidPAfEZD")
   	profile = graph.get_object("me")
   	@feed = graph.get_connections("me", "feed")
     # byebug
