@@ -1,4 +1,15 @@
-<h1>List of posts</h1>
-<%  %>
 
+<div class="container">
+	<h1>List of posts</h1><br/><br/>
 
+<% @posts.each do |post| %>
+<div class="row">
+<div class="col-md-3">
+<img src="<%= post.photo %>" alt=""></div>
+<div class="col-md-9">
+<p><%= post.address %></p>
+</div>
+</div>
+<br/><br/>
+<% end %>
+</div>

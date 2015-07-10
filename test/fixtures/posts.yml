@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  postid: 1
+  postidcontent: MyText
+  address: MyText
+  locality: MyString
+  city: MyString
+  problem: MyString
+  postvalidity: false
+  resolution: false
+  photo: MyText
+
+two:
+  postid: 1
+  postidcontent: MyText
+  address: MyText
+  locality: MyString
+  city: MyString
+  problem: MyString
+  postvalidity: false
+  resolution: false
+  photo: MyText
